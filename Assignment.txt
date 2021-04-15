@@ -1,0 +1,23 @@
+1. The code outputs a dataframe, which lists all the passengers with an age value <=20, sorted by their age and then whether they survived or not, along with a calculated column signifying how many family members they had.
+
+2. The data being used is the Age column, the survived column, and the Sibling Spouse Count and Parent Child Count columns, as the last ones are used to form a calculated column
+
+3. The data is coming from a CSV table file stored at this link: 
+
+4. The format of the data is a CSV (Comma separated values) table, a common format for storing table data, used by excel exports for example.
+
+5. The method  df = pd.read_csv() is used to read this CSV file into a pandas dataframe
+
+6.The code is able to drop columns and rows from the table, delete elements, add values to elements efficiently, sort columns and sort tables by multiple columns, one after the other.
+
+7. The information contained in the variable df is the entirety of the pandas dataframe, which contains column, index, and data value information. 
+
+8. The variable array col_names contains refrences to every single column of the dataframe. It is referenced and edited when the dataframe is manipulated
+
+9.p = df[(df['Age'] <= 20)] takes all elements of the table that satisfy the condition df['Age'] <= 20), and drops all other rows from the dataframe. This is because dataframes allow for boolean indexing.
+
+print(p.sort_values(by=['Age', 'Survived'])), sorts the values by age, then whether they survived or not, prioritizing dead people.
+
+10.Code is attached in the file
+
+11. Code is attached in the file
